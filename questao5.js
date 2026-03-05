@@ -4,10 +4,12 @@ let nota3 = Number(prompt("Digite a terceira nota:"));
 
 let media = (nota1 + nota2 + nota3) / 3;
 
+console.log("Média: " + media.toFixed(2));
+
 if (media >= 7) {
-    alert("Aprovado");
-} else if (media >= 5 && media < 7) {
-    alert("Recuperação");
+    console.log("Situação: Aprovado");
+} else if (media >= 5) {
+    console.log("Situação: Recuperação");
 } else {
-    alert("Reprovado");
+    console.log("Situação: Reprovado");
 }
