@@ -1,22 +1,19 @@
-let numb1 = Number(prompt("Digite o primeiro número:"));
-let numb2 = Number(prompt("Digite o segundo número:"));
-let operacao = prompt("Esccolha uma operação (+, -, *, /):");
+let n1 = Number(prompt("Digite o primeiro número:"));
+let n2 = Number(prompt("Digite o segundo número:"));
+let operacao = prompt("Escolha a operação (+, -, *, /):");
 
+let resultado;
 
-let resultado
-
-if (operacao === "+"){
-    resultado = numb1 + numb2;
-} else if (operacao === "-"){
-    resultado = numb1 - numb2;
-} else if (operacao === "*"){
-    resultado = numb1 * numb2;
-} else if (operacao === "/"){
-    resultado = numb1 / numb2;
+if (operacao === "+") {
+    resultado = n1 + n2;
+} else if (operacao === "-") {
+    resultado = n1 - n2;
+} else if (operacao === "*") {
+    resultado = n1 * n2;
+} else if (operacao === "/") {
+    resultado = n1 / n2;
 } else {
-    alert("Operação inválida!");
-}
-if (resultado !== undefined) {
-    alert("Resultado: " + resultado);
+    resultado = "Operação inválida";
 }
 
+console.log("Resultado: " + resultado);
