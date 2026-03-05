@@ -1,9 +1,7 @@
-alert((parseInt(prompt( ' digite sua idade: ')) > 18 ? 'maior de idade' : 'menor de idade' ))
-
-let idade = Number(prompt("Digite sua idade:"));
+let idade = Number(prompt("Digite a sua idade:"));
 
 if (idade >= 18) {
-    alert("Maior de idade");
+    console.log("Você é maior de idade!");
 } else {
-alert("Menor de idade");
+    console.log("Você é menor de idade!");
 }
